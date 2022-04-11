@@ -41,6 +41,24 @@
   --cocogoose: 'Cocogoose', sans-serif;
 }
 
+.section-title{
+  text-align: center;
+  font-family: var(--lato);
+  font-weight: 600;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.section-title::after{
+  content: '';
+  border-top: 1px solid var(--orange);
+  width: 15%;
+  height: 10px;
+  position: absolute;
+  top: 120%;
+  left: 42%;
+}
+
 .navbar__container {
   width: 100%;
   margin: 20px;
@@ -108,24 +126,10 @@
 }
 
 .features__title{
-  text-align: center;
   margin-top: 10px;
   margin-bottom: 25px;
-  font-family: var(--lato);
   color: white;
-  font-weight: 600;
-  font-size: 1.5rem;
   position: relative;
-}
-
-.features__title::after{
-  content: '';
-  border-top: 1px solid var(--orange);
-  width: 15%;
-  height: 10px;
-  position: absolute;
-  top: 120%;
-  left: 42%;
 }
 
 .features__card{
@@ -168,3 +172,52 @@
   font-weight: 600;
 }
 
+.artist__container{
+  width: 100%;
+}
+
+.artist__title{
+  margin: 40px 0;
+}
+
+.artist__card{
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  gap: 15px;
+}
+
+.artist__image{
+  grid-area: img;
+  max-width: 50%;
+  box-shadow: 1px 1px 20px var(--darkgray);
+}
+
+.artist__name{
+  font-family: var(--lato);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.artist__style{
+  font-family: var(--lato);
+  font-size: 0.8rem;
+  color: var(--orange);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.artist__style::after{
+  content: '';
+  border-top: 2px var(--lightgray) solid;
+  width: 15px;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+
+.artist__desc{
+  font-family: var(--lato);
+  font-size: 0.6rem;
+  margin-top: 15px;
+}
