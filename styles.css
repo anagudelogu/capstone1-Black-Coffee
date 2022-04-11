@@ -4,9 +4,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-repeat: no-repeat;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&family=Montserrat:wght@400;600;800;900&display=swap');
 
 @font-face {
   font-family: 'Cocogoose';
@@ -34,8 +35,9 @@
   --darkgray: #272a31;
   --lightgray: #d3d3d3;
   --orange: #ec5242;
-  --cocogoose: 'Cocogoose', sans serif;
+  --montserrat: 'Montserrat', sans-serif;
   --lato: 'Lato', sans serif;
+  --test: 2px solid red;
 }
 
 .navbar__container {
@@ -50,4 +52,48 @@
 
 .navbar__links {
   display: none;
+}
+
+
+.hero__container{
+  background-image: url(./images/mobile_intro_bg.png);
+  background-size: contain;
+  height: 70vh;
+  border: 0.1px white solid;
+}
+
+.hero__texts{
+  width: 90%;
+  margin: 20% auto;
+}
+
+.hero__title{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.hero__logo{
+  width: 100%;
+  margin-left: -50px;
+  margin-bottom: -15px;
+}
+
+.hero__intro {
+  font-family: var(--lato);
+  font-size: 0.8rem;
+  border: 4px solid rgb(255, 255, 255);
+  background-color: rgb(247, 247, 248);
+  margin-bottom: 20px;
+}
+
+.hero__date-title{
+  font-family: var(--montserrat);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--darkgray);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
 }
