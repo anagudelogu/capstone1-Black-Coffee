@@ -1,3 +1,55 @@
-h1 {
-  color: blue;
+*, 
+*::after, 
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&display=swap');
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url(./fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
+  font-weight:200;
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url(./fonts/Cocogoose\ Pro\ Light-trial.ttf), url();
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url(./fonts/Cocogoose\ Pro\ Semilight-trial.ttf);
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url(./fonts/Cocogoose\ Pro-trial.ttf);
+}
+
+:root {
+  --darkgray: #272A31;
+  --lightgray: #D3D3D3;
+  --orange: #EC5242;
+  --cocogoose: 'Cocogoose', sans serif;
+  --lato: 'Lato', sans serif;
+}
+
+.navbar__container{
+  width: 100%;
+  margin: 20px;
+  position: fixed;
+}
+
+.navbar__hamburger{
+  width: 25px;
+}
+
+.navbar__links {
+  display: none;
 }
