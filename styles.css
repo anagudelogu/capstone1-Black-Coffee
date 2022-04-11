@@ -1,19 +1,17 @@
-*, 
-*::after, 
+*,
+*::after,
 *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&display=swap');
 
 @font-face {
   font-family: 'Cocogoose';
   src: url(./fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
-  font-weight:200;
+  font-weight: 200;
 }
 
 @font-face {
@@ -33,20 +31,20 @@
 }
 
 :root {
-  --darkgray: #272A31;
-  --lightgray: #D3D3D3;
-  --orange: #EC5242;
+  --darkgray: #272a31;
+  --lightgray: #d3d3d3;
+  --orange: #ec5242;
   --cocogoose: 'Cocogoose', sans serif;
   --lato: 'Lato', sans serif;
 }
 
-.navbar__container{
+.navbar__container {
   width: 100%;
   margin: 20px;
   position: fixed;
 }
 
-.navbar__hamburger{
+.navbar__hamburger {
   width: 25px;
 }
 
