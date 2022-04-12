@@ -81,7 +81,8 @@ a, a:hover, a:focus, a:active {
 
 .navbar__links,
 .navbarLog__container,
-.navbar__button {
+.navbar__button,
+.navbar__logo {
   display: none;
 }
 
@@ -385,6 +386,7 @@ footer {
   }
 
   .navbar__logo{
+    display: block;
     width: 100px;
   }
   .navbar__hamburger{
