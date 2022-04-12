@@ -101,7 +101,7 @@
   margin-bottom: -5px;
 }
 
-.hero__intro::before{
+.hero__intro::before {
   content: 'FEST';
   width: 100%;
   position: absolute;
@@ -109,8 +109,8 @@
   left: 60%;
   font-weight: 800;
   font-family: var(--cocogoose);
-  
 }
+
 .hero__intro {
   font-size: 0.8rem;
   border: 4px solid rgb(255, 255, 255);
@@ -254,19 +254,18 @@ footer {
   margin: 20px;
 }
 
-
 /* ABOUT PAGE */
 
-.aboutHero__logo{
+.aboutHero__logo {
   max-width: 100%;
   margin-top: 30px;
 }
 
-.centered{
+.centered {
   text-align: center;
 }
 
-.aboutHero__paragraph{
+.aboutHero__paragraph {
   background-color: white;
   border: 1px solid var(--lightgray);
   padding: 15px;
@@ -275,4 +274,3 @@ footer {
   font-size: 0.8rem;
   margin-bottom: 20px;
 }
-
