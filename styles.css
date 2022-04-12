@@ -85,7 +85,8 @@ a:active {
 .navbar__links,
 .navbarLog__container,
 .navbar__button,
-.navbar__logo {
+.navbar__logo,
+.aboutHero__detailed {
   display: none;
 }
 
@@ -536,5 +537,35 @@ footer {
 
   .artist__desc {
     font-size: 0.8rem;
+  }
+
+  /* ABOUT PAGE */
+  .aboutHero__container{
+    background-image: url(./images/about_bg_01.png);
+    background-color: rgb(247, 247, 248);
+    background-size: contain;
+    background-position: center center;
+    height: auto;
+    margin-bottom: 200px;
+    padding: 10% 20% 5%;
+  }
+
+  .aboutHero__logo{
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .aboutHero__paragraph{
+    margin: 50px auto;
+  }
+
+  .aboutHero__brief{
+    display: none;
+  }
+
+  .aboutHero__detailed{
+    display: block;
+    padding: 20px 5%;
+    line-height: 22px;
   }
 }
