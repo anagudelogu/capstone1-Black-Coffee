@@ -43,6 +43,15 @@
   overflow-x: hidden;
 }
 
+ul {
+  list-style: none;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .section-title {
   text-align: center;
   font-weight: 600;
@@ -70,7 +79,9 @@
   width: 25px;
 }
 
-.navbar__links {
+.navbar__links,
+.navbarLog__container,
+.navbar__button {
   display: none;
 }
 
@@ -332,4 +343,69 @@ footer {
 .aboutPast__year {
   color: white;
   font-size: 1.4rem;
+}
+
+
+@media (min-width: 768px){
+
+  .navbar__container{
+    height: 100px;
+    margin: 0;
+    top: 0;
+    z-index: 9;
+  }
+
+  .navbarLog__container{
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--darkgray);
+    height: 30px;
+    gap: 20px;
+    padding: 5px 10%;
+  }
+
+  .navbarLog__list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .navbarLog__link{
+    color: white;
+    font-size: 1rem;
+  }
+
+  .navbar__menu{
+    padding: 5px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 0.1px var(--darkgray);
+  }
+
+  .navbar__logo{
+    width: 100px;
+  }
+  .navbar__hamburger{
+    display: none;
+  }
+
+  .navbar__links{
+    display: flex;
+    gap: 50px;
+    color: var(--darkgray);
+    align-items: center;
+  }
+
+  .navbar__button{
+    display: block;
+    color: var(--orange);
+    border: solid 4px var(--orange);
+    margin: 0 60px;
+    padding: 5%;
+    width: 70%;
+    background-color: white;
+  }
+
 }
