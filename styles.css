@@ -221,3 +221,31 @@
   font-size: 0.6rem;
   margin-top: 15px;
 }
+
+.partner__container{
+  background-color: var(--darkgray);
+  padding: 20px;
+}
+
+.partner__title{
+  margin-top: 10px;
+  color: var(--lightgray);
+
+}
+
+.partner__logos{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3%;
+}
+.partner__logos img{
+  width: 30%;
+  max-width: 200px;
+}
+
+footer{
+  text-align: center;
+  margin: 20px;
+}
