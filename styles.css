@@ -1,11 +1,3 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-repeat: no-repeat;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&family=Montserrat:wght@400;600;800;900&display=swap');
 
@@ -41,9 +33,18 @@
   --cocogoose: 'Cocogoose', sans-serif;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  font-family: var(--lato);
+}
+
 .section-title {
   text-align: center;
-  font-family: var(--lato);
   font-weight: 600;
   font-size: 1.5rem;
   position: relative;
@@ -97,15 +98,25 @@
 .hero__logo {
   max-width: 100%;
   margin-left: -50px;
-  margin-bottom: -15px;
+  margin-bottom: -5px;
+}
+
+.hero__intro::before {
+  content: 'FEST';
+  width: 100%;
+  position: absolute;
+  top: -35px;
+  left: 60%;
+  font-weight: 800;
+  font-family: var(--cocogoose);
 }
 
 .hero__intro {
-  font-family: var(--lato);
   font-size: 0.8rem;
   border: 4px solid rgb(255, 255, 255);
   background-color: rgb(247, 247, 248);
   margin-bottom: 20px;
+  position: relative;
 }
 
 .hero__date-title {
@@ -147,7 +158,6 @@
 
 .card__title {
   color: var(--orange);
-  font-family: var(--lato);
   font-weight: 800;
   font-size: 1rem;
 }
@@ -155,7 +165,6 @@
 .card__desc {
   color: white;
   font-size: 0.75rem;
-  font-family: var(--lato);
 }
 
 .features__button {
@@ -166,7 +175,6 @@
   padding: 20px 15px;
   border: none;
   color: white;
-  font-family: var(--lato);
   font-size: 1rem;
   font-weight: 600;
 }
@@ -193,13 +201,11 @@
 }
 
 .artist__name {
-  font-family: var(--lato);
   font-size: 1.2rem;
   font-weight: 800;
 }
 
 .artist__style {
-  font-family: var(--lato);
   font-size: 0.8rem;
   color: var(--orange);
   position: relative;
@@ -216,7 +222,6 @@
 }
 
 .artist__desc {
-  font-family: var(--lato);
   font-size: 0.6rem;
   margin-top: 15px;
 }
@@ -247,4 +252,25 @@
 footer {
   text-align: center;
   margin: 20px;
+}
+
+/* ABOUT PAGE */
+
+.aboutHero__logo {
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.aboutHero__paragraph {
+  background-color: white;
+  border: 1px solid var(--lightgray);
+  padding: 15px;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
 }
