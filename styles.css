@@ -43,7 +43,6 @@
   overflow-x: hidden;
 }
 
-
 .section-title {
   text-align: center;
   font-weight: 600;
@@ -101,14 +100,12 @@
   margin: 15px 0 10px;
 }
 
-
 .hero__intro {
   font-size: 0.8rem;
   border: 4px solid rgb(255, 255, 255);
   background-color: rgb(247, 247, 248);
   margin-bottom: 20px;
 }
-
 
 .hero__date-title {
   font-family: var(--montserrat);
@@ -252,7 +249,7 @@ footer {
 
 .aboutHero__logo {
   max-width: 100%;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .centered {
@@ -264,7 +261,75 @@ footer {
   border: 1px solid var(--lightgray);
   padding: 15px;
   width: 90%;
-  margin: 0 auto;
+  margin: 15px auto 30px;
   font-size: 0.8rem;
+}
+
+.aboutHero__email {
+  margin-top: 5px;
+}
+
+.aboutFest__container {
+  padding: 30px 5% 50px;
+  border-bottom: var(--lightgray) 2px solid;
+}
+
+.aboutFest__title {
+  margin-bottom: 10px;
+}
+
+.aboutFest__desc {
+  font-size: 0.8rem;
+  margin-bottom: 40px;
+}
+
+.aboutFest__img {
+  max-width: 100%;
+}
+
+.aboutPast__container {
+  padding: 30px 5% 50px;
+}
+
+.aboutPast__title {
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.aboutPast__desc {
+  font-size: 0.8rem;
+  margin-bottom: 40px;
+}
+
+.aboutPast__imgCont {
   margin-bottom: 20px;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 99999px rgba(230, 56, 25, 0.781);
+}
+
+.cont1 {
+  background-image: url(./images/aboutPast1.png);
+  background-size: cover;
+}
+
+.cont2 {
+  background-image: url(./images/aboutPast2.png);
+  background-size: cover;
+}
+
+.aboutPast__imgTitle {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.aboutPast__year {
+  color: white;
+  font-size: 1.4rem;
 }
