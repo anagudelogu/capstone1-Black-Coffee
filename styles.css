@@ -41,7 +41,7 @@
   --cocogoose: 'Cocogoose', sans-serif;
 }
 
-.section-title{
+.section-title {
   text-align: center;
   font-family: var(--lato);
   font-weight: 600;
@@ -49,7 +49,7 @@
   position: relative;
 }
 
-.section-title::after{
+.section-title::after {
   content: '';
   border-top: 1px solid var(--orange);
   width: 15%;
@@ -73,28 +73,28 @@
   display: none;
 }
 
-
-.hero__container{
+.hero__container {
   background-image: url(./images/mobile_intro_bg.png);
   background-size: contain;
   height: 70vh;
   border: 0.1px white solid;
 }
 
-.hero__texts{
+.hero__texts {
   width: 90%;
   margin: 20% auto;
 }
 
-.hero__title{
-  position:absolute;
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
+.hero__title {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
-.hero__logo{
+
+.hero__logo {
   max-width: 100%;
   margin-left: -50px;
   margin-bottom: -15px;
@@ -108,7 +108,7 @@
   margin-bottom: 20px;
 }
 
-.hero__date-title{
+.hero__date-title {
   font-family: var(--montserrat);
   font-size: 1.5rem;
   font-weight: 900;
@@ -117,7 +117,7 @@
   margin-bottom: 10px;
 }
 
-.features__container{
+.features__container {
   background-image: url(./images/cardPatternBg.png);
   background-color: var(--darkgray);
   background-repeat: repeat;
@@ -125,41 +125,40 @@
   padding: 10% 5%;
 }
 
-.features__title{
+.features__title {
   margin-top: 10px;
   margin-bottom: 25px;
   color: white;
   position: relative;
 }
 
-.features__card{
+.features__card {
   display: flex;
   align-items: center;
   gap: 15px;
-  padding: 0 10px;
   background: rgba(255, 255, 255, 0.1);
   padding: 16px 5px;
   margin-bottom: 10px;
 }
 
-.card__icon{
+.card__icon {
   width: 7rem;
 }
 
-.card__title{
+.card__title {
   color: var(--orange);
   font-family: var(--lato);
   font-weight: 800;
   font-size: 1rem;
 }
 
-.card__desc{
+.card__desc {
   color: white;
   font-size: 0.75rem;
   font-family: var(--lato);
 }
 
-.features__button{
+.features__button {
   display: block;
   width: 75%;
   margin: 50px auto;
@@ -172,34 +171,34 @@
   font-weight: 600;
 }
 
-.artist__container{
+.artist__container {
   width: 100%;
 }
 
-.artist__title{
+.artist__title {
   margin: 40px 0;
 }
 
-.artist__card{
+.artist__card {
   width: 90%;
   margin: 50px auto;
   display: flex;
   gap: 15px;
 }
 
-.artist__image{
+.artist__image {
   grid-area: img;
   max-width: 50%;
   box-shadow: 1px 1px 20px var(--darkgray);
 }
 
-.artist__name{
+.artist__name {
   font-family: var(--lato);
   font-size: 1.2rem;
   font-weight: 800;
 }
 
-.artist__style{
+.artist__style {
   font-family: var(--lato);
   font-size: 0.8rem;
   color: var(--orange);
@@ -207,7 +206,7 @@
   padding-bottom: 10px;
 }
 
-.artist__style::after{
+.artist__style::after {
   content: '';
   border-top: 2px var(--lightgray) solid;
   width: 15px;
@@ -216,36 +215,36 @@
   left: 0%;
 }
 
-.artist__desc{
+.artist__desc {
   font-family: var(--lato);
   font-size: 0.6rem;
   margin-top: 15px;
 }
 
-.partner__container{
+.partner__container {
   background-color: var(--darkgray);
   padding: 20px;
 }
 
-.partner__title{
+.partner__title {
   margin-top: 10px;
   color: var(--lightgray);
-
 }
 
-.partner__logos{
+.partner__logos {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 3%;
 }
-.partner__logos img{
+
+.partner__logos img {
   width: 30%;
   max-width: 200px;
 }
 
-footer{
+footer {
   text-align: center;
   margin: 20px;
 }
