@@ -372,9 +372,10 @@ footer {
 
   .navbar__container {
     height: 100px;
-    margin: 0;
+    margin: 0 auto;
     top: 0;
     z-index: 9;
+    max-width: 1600px;
   }
 
   .navbarLog__container {
