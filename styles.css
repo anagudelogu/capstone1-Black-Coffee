@@ -47,7 +47,10 @@ ul {
   list-style: none;
 }
 
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   color: inherit;
 }
@@ -186,7 +189,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .artist__title {
-  margin: 40px 0;
+  margin: 40px 0 20px;
 }
 
 .artist__card {
@@ -197,7 +200,6 @@ a, a:hover, a:focus, a:active {
 }
 
 .artist__image {
-  grid-area: img;
   max-width: 50%;
   box-shadow: 1px 1px 20px var(--darkgray);
 }
@@ -213,6 +215,7 @@ a, a:hover, a:focus, a:active {
   position: relative;
   padding-bottom: 10px;
   height: 25px;
+  overflow-y: hidden;
 }
 
 .artist__style::after {
@@ -346,35 +349,35 @@ footer {
   font-size: 1.4rem;
 }
 
-@media (min-width: 320px){
-  .hero__container{
+@media (min-width: 320px) {
+  .hero__container {
     background-size: cover;
   }
 }
-@media (min-width: 768px){
 
-  body{
+@media (min-width: 768px) {
+  body {
     max-width: 1600px;
     margin: 0 auto;
   }
 
-  .section-title{
+  .section-title {
     height: 50px;
   }
 
-  .section-title::after{
+  .section-title::after {
     width: 5%;
     left: 48%;
   }
 
-  .navbar__container{
+  .navbar__container {
     height: 100px;
     margin: 0;
     top: 0;
     z-index: 9;
   }
 
-  .navbarLog__container{
+  .navbarLog__container {
     display: flex;
     justify-content: flex-end;
     background-color: var(--darkgray);
@@ -383,18 +386,18 @@ footer {
     padding: 5px 10%;
   }
 
-  .navbarLog__list{
+  .navbarLog__list {
     display: flex;
     justify-content: center;
     gap: 20px;
   }
 
-  .navbarLog__link{
+  .navbarLog__link {
     color: white;
     font-size: 1rem;
   }
 
-  .navbar__menu{
+  .navbar__menu {
     padding: 5px 10%;
     display: flex;
     justify-content: space-between;
@@ -403,22 +406,23 @@ footer {
     box-shadow: 0.5px 0.5px 0.1px var(--darkgray);
   }
 
-  .navbar__logo{
+  .navbar__logo {
     display: block;
     width: 100px;
   }
-  .navbar__hamburger{
+
+  .navbar__hamburger {
     display: none;
   }
 
-  .navbar__links{
+  .navbar__links {
     display: flex;
     gap: 50px;
     color: var(--darkgray);
     align-items: center;
   }
 
-  .navbar__button{
+  .navbar__button {
     display: block;
     color: var(--orange);
     border: solid 4px var(--orange);
@@ -429,53 +433,53 @@ footer {
   }
 
   /* HERO SECTION */
-  .hero__container{
+  .hero__container {
     margin-top: 80px;
     background-image: url(./images/mainBg.png);
     background-size: cover;
     height: auto;
   }
 
-  .hero__texts{
+  .hero__texts {
     margin: 5% auto 10%;
     width: 80%;
   }
 
-  .hero__logo{
+  .hero__logo {
     width: 40%;
     margin-bottom: 50px;
   }
 
-  .hero__intro{
+  .hero__intro {
     width: 60%;
     font-size: 1rem;
   }
 
-  .hero__date-title{
+  .hero__date-title {
     font-size: 3rem;
   }
 
-  .hero__date-details{
+  .hero__date-details {
     font-size: 1.4rem;
   }
 
-  .features__container{
+  .features__container {
     padding: 5% 15%;
   }
 
-  .features__title{
+  .features__title {
     font-size: 2rem;
     margin-bottom: 70px;
   }
 
-  .features__cards{
+  .features__cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
   }
 
-  .features__card{
+  .features__card {
     display: flex;
     flex-direction: column;
     width: 20%;
@@ -483,25 +487,53 @@ footer {
     gap: 30px;
   }
 
-  .card__icon{
+  .card__icon {
     max-width: 50px;
   }
 
-  .card__title{
+  .card__title {
     font-size: 1.3rem;
     width: 100%;
   }
 
-  .card__desc{
+  .card__desc {
     font-size: 1rem;
     text-align: center;
   }
 
-  .features__button{
+  .features__button {
     background: none;
     font-size: 1.5rem;
     text-decoration: underline;
     cursor: pointer;
   }
-}
 
+  .artist__container {
+    padding: 0 10%;
+  }
+
+  .artist__title {
+    margin: 60px auto;
+  }
+
+  .artist__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    margin-bottom: 100px;
+  }
+
+  .artist__card {
+    width: 45%;
+    margin: 20px 0;
+  }
+
+  .artist__name {
+    font-size: 1.5rem;
+  }
+
+  .artist__desc {
+    font-size: 0.8rem;
+  }
+}
