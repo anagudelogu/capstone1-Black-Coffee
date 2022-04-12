@@ -346,9 +346,17 @@ footer {
   font-size: 1.4rem;
 }
 
-
+@media (min-width: 320px){
+  .hero__container{
+    background-size: cover;
+  }
+}
 @media (min-width: 768px){
 
+  body{
+    max-width: 1600px;
+    margin: 0 auto;
+  }
   .navbar__container{
     height: 100px;
     margin: 0;
@@ -410,4 +418,34 @@ footer {
     background-color: white;
   }
 
+  /* HERO SECTION */
+  .hero__container{
+    margin-top: 80px;
+    background-image: url(./images/mainBg.png);
+    background-size: cover;
+    height: auto;
+  }
+
+  .hero__texts{
+    margin: 5% auto 10%;
+    width: 80%;
+  }
+
+  .hero__logo{
+    width: 40%;
+    margin-bottom: 50px;
+  }
+
+  .hero__intro{
+    width: 60%;
+    font-size: 1rem;
+  }
+
+  .hero__date-title{
+    font-size: 3rem;
+  }
+
+  .hero__date-details{
+    font-size: 1.4rem;
+  }
 }
