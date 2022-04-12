@@ -357,6 +357,16 @@ footer {
     max-width: 1600px;
     margin: 0 auto;
   }
+
+  .section-title{
+    height: 50px;
+  }
+
+  .section-title::after{
+    width: 5%;
+    left: 48%;
+  }
+
   .navbar__container{
     height: 100px;
     margin: 0;
@@ -448,4 +458,50 @@ footer {
   .hero__date-details{
     font-size: 1.4rem;
   }
+
+  .features__container{
+    padding: 5% 15%;
+  }
+
+  .features__title{
+    font-size: 2rem;
+    margin-bottom: 70px;
+  }
+
+  .features__cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .features__card{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 3%;
+    gap: 30px;
+  }
+
+  .card__icon{
+    max-width: 50px;
+  }
+
+  .card__title{
+    font-size: 1.3rem;
+    width: 100%;
+  }
+
+  .card__desc{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .features__button{
+    background: none;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
+
