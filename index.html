@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone 1 - Black coffee</title>
+    <title>Capstone 1 - Black coffee Fest</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="navbar__container">
+        <section class="navbarLog__container">
+            <img src="./images/facebook.png" alt="Facebook" class="navbarLog__logo">
+            <img src="./images/twitter.png" alt="Twitter" class="navbarLog__logo">
+            <ul class="navbarLog__list">
+                <li class="navbarLog__link">English</li>
+                <li class="navbarLog__link">My Page</li>
+                <li class="navbarLog__link">Logout</li>
+            </ul>
+        </section>
         <nav class="navbar__menu">
+            <img src="./images/bc-main-logo.png" alt="Black Coffee Fest Logo" class="navbar__logo">
             <img src="./images/mobile_menu.png" alt="Menu icon" class="navbar__hamburger">
             <ul class="navbar__links">
                 <li class="navbar__link"><a href="#">Home</a></li>
                 <li class="navbar__link"><a href="#">About</a></li>
+                <li><button class="navbar__button" type="button">Buy Tickets Now!</button></li>
             </ul>
         </nav>
     </header>
@@ -33,39 +44,43 @@
         </section>
         <section class="features__container">
             <h2 class="features__title section-title"> Features </h2>
-            <article class="features__card">
-                <img src="./images/graphic_eq_white_24dp.svg" alt="Main stage icon" class="card__icon">
-                <h3 class="card__title">Main stage</h3>
-                <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, libero.</p>
-            </article>
-            <article class="features__card">
-                <img src="./images/storefront_white_24dp.svg" alt="Merch icon" class="card__icon">
-                <h3 class="card__title">Merch</h3>
-                <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, libero.</p>
-            </article>
-            <article class="features__card">
-                <img src="./images/local_bar_white_24dp.svg" alt="Drinks icon" class="card__icon">
-                <h3 class="card__title">Drinks</h3>
-                <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, libero.</p>
-            </article>
-            <article class="features__card">
-                <img src="./images/restaurant_white_24dp.svg" alt="Food icon" class="card__icon">
-                <h3 class="card__title">Food</h3>
-                <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, libero.</p>
-            </article>
-            <button type='button' class="features__button">Buy your tickets now!</button>
+            <div class="features__cards">
+                <article class="features__card">
+                    <img src="./images/graphic_eq_white_24dp.svg" alt="Main stage icon" class="card__icon">
+                    <h3 class="card__title">Main stage</h3>
+                    <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, libero.</p>
+                </article>
+                <article class="features__card">
+                    <img src="./images/storefront_white_24dp.svg" alt="Merch icon" class="card__icon">
+                    <h3 class="card__title">Merch</h3>
+                    <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, libero.</p>
+                </article>
+                <article class="features__card">
+                    <img src="./images/local_bar_white_24dp.svg" alt="Drinks icon" class="card__icon">
+                    <h3 class="card__title">Drinks</h3>
+                    <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, libero.</p>
+                </article>
+                <article class="features__card">
+                    <img src="./images/restaurant_white_24dp.svg" alt="Food icon" class="card__icon">
+                    <h3 class="card__title">Food</h3>
+                    <p class="card__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, libero.</p>
+                </article>
+                <button type='button' class="features__button">Buy your tickets now!</button>
+            </div>    
         </section>
-        <section class="artist__container">
-            <h2 class="artist__title section-title">Featured Artists</h2>
-            <article class="artist__card">
-                <img src="./images/artist01-bc.png" alt="aa" class="artist__image">
-                <div class="artist__info">
-                    <h3 class="artist__name">Black Coffee</h3>
-                    <p class="artist__style">Tech-house beats</p>
-                    <p class="artist__desc">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            <section class="artist__container">
+                <h2 class="artist__title section-title">Featured Artists</h2>
+                <div class="artist__cards">
+                    <article class="artist__card">
+                        <img src="./images/artist01-bc.png" alt="aa" class="artist__image">
+                        <div class="artist__info">
+                            <h3 class="artist__name">Black Coffee</h3>
+                            <p class="artist__style">Tech-house beats</p>
+                            <p class="artist__desc">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                        </div>
+                    </article>
                 </div>
-            </article>
-        </section>
+            </section>
         <section class="partner__container">
             <h2 class="partner__title section-title"> Partner</h2>
             <div class="partner__logos">
