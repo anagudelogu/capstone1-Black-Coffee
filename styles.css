@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,900&family=Montserrat:wght@400;600;800;900&display=swap');
 
 @font-face {
@@ -41,6 +40,7 @@
   padding: 0;
   background-repeat: no-repeat;
   font-family: var(--lato);
+  overflow-x: hidden;
 }
 
 .section-title {
