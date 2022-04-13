@@ -573,6 +573,7 @@ footer {
   .card__desc {
     font-size: 1rem;
     text-align: center;
+    width: 100%;
   }
 
   .features__button {
