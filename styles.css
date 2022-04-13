@@ -83,6 +83,7 @@ a:active {
   width: 25px;
   margin: 20px 0 10px 20px;
   position: fixed;
+  z-index: 9;
 }
 
 .navbar__hamburger.active {
