@@ -90,16 +90,15 @@ a:active {
 }
 
 .navbar__links {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100vw;
   top: 0;
   left: 0;
   z-index: 9;
-  background-color: var(--orange);
+  background-color: rgba(230, 56, 25, 0.95);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 30px;
   transform: translateY(-100%);
@@ -120,6 +119,19 @@ a:active {
 
 .navbar__close.active {
   display: block;
+}
+
+.navbar__linkLogo {
+  margin: 80px auto 40px;
+}
+
+.navbar__link a {
+  color: #2b2b2b;
+  font-family: var(--montserrat);
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  border-bottom: 2px white solid;
 }
 
 .navbarLog__container,
@@ -401,7 +413,8 @@ footer {
   }
 
   .navbar__linkLogo,
-  .navbar__hamburger {
+  .navbar__hamburger,
+  .navbar__close {
     display: none;
   }
 
@@ -467,6 +480,15 @@ footer {
     color: var(--darkgray);
     align-items: center;
     background: none;
+    transform: translateY(0);
+  }
+
+  .navbar__link a {
+    color: #2b2b2b;
+    font-family: var(--lato);
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: normal;
   }
 
   .navbar__button {
