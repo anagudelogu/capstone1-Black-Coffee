@@ -252,8 +252,11 @@ a:active {
 }
 
 .artist__image {
+  width: 135px;
   max-width: 50%;
   box-shadow: 1px 1px 20px var(--darkgray);
+  height: 98px;
+  object-fit: cover;
 }
 
 .artist__name {
@@ -334,6 +337,7 @@ footer {
 
 .aboutHero__email {
   margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .aboutFest__container {
@@ -596,6 +600,10 @@ footer {
   .artist__card {
     width: 45%;
     margin: 20px 0;
+  }
+  .artist__image{
+    height: 180px;
+    width: 248px;
   }
 
   .artist__name {
