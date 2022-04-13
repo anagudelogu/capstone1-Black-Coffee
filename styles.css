@@ -364,6 +364,7 @@ footer {
 
   .section-title {
     height: 50px;
+    font-size: 2rem;
   }
 
   .section-title::after {
@@ -470,7 +471,6 @@ footer {
   }
 
   .features__title {
-    font-size: 2rem;
     margin-bottom: 70px;
   }
 
@@ -546,8 +546,8 @@ footer {
     background-size: contain;
     background-position: center center;
     height: auto;
-    margin-bottom: 200px;
     padding: 10% 20% 5%;
+    margin-bottom: 30px;
   }
 
   .aboutHero__logo{
@@ -567,5 +567,17 @@ footer {
     display: block;
     padding: 20px 5%;
     line-height: 22px;
+  }
+
+  .aboutFest__container{
+    padding: 30px 20% 50px;
+  }
+  .aboutFest__desc{
+    padding: 20px 20%;
+  }
+  .aboutFest__img{
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;
   }
 }
