@@ -215,13 +215,14 @@ a:active {
   color: var(--orange);
   font-weight: 800;
   font-size: 1rem;
-  width: 50%;
+  width: 40%;
   text-align: center;
 }
 
 .card__desc {
   color: white;
   font-size: 0.75rem;
+  width: 70%;
 }
 
 .features__button {
@@ -572,6 +573,7 @@ footer {
   .card__desc {
     font-size: 1rem;
     text-align: center;
+    width: 100%;
   }
 
   .features__button {
