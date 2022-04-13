@@ -85,7 +85,8 @@ a:active {
 .navbar__links,
 .navbarLog__container,
 .navbar__button,
-.navbar__logo {
+.navbar__logo,
+.aboutHero__detailed {
   display: none;
 }
 
@@ -363,6 +364,7 @@ footer {
 
   .section-title {
     height: 50px;
+    font-size: 2rem;
   }
 
   .section-title::after {
@@ -372,9 +374,10 @@ footer {
 
   .navbar__container {
     height: 100px;
-    margin: 0;
+    margin: 0 auto;
     top: 0;
     z-index: 9;
+    max-width: 1600px;
   }
 
   .navbarLog__container {
@@ -468,7 +471,6 @@ footer {
   }
 
   .features__title {
-    font-size: 2rem;
     margin-bottom: 70px;
   }
 
@@ -535,5 +537,69 @@ footer {
 
   .artist__desc {
     font-size: 0.8rem;
+  }
+
+  /* ABOUT PAGE */
+  .aboutHero__container {
+    background-image: url(./images/about_bg_01.png);
+    background-color: rgb(247, 247, 248);
+    background-size: contain;
+    background-position: center center;
+    height: auto;
+    padding: 10% 20% 5%;
+    margin-bottom: 30px;
+  }
+
+  .aboutHero__logo {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .aboutHero__paragraph {
+    margin: 50px auto;
+  }
+
+  .aboutHero__brief {
+    display: none;
+  }
+
+  .aboutHero__detailed {
+    display: block;
+    padding: 20px 5%;
+    line-height: 22px;
+  }
+
+  .aboutFest__container {
+    padding: 30px 20% 50px;
+  }
+
+  .aboutFest__desc {
+    padding: 20px 20%;
+  }
+
+  .aboutFest__img {
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .aboutPast__container {
+    padding: 30px 20% 50px;
+  }
+
+  .aboutPast__title {
+    height: 100px;
+  }
+
+  .aboutPast__images {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutPast__imgCont {
+    width: 40%;
+    height: 250px;
   }
 }
