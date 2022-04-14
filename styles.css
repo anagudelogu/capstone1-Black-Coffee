@@ -139,7 +139,7 @@ a:active {
 .navbar__button,
 .navbar__logo,
 .aboutHero__detailed,
-.footer__imageWhite{
+.footer__imageWhite {
   display: none;
 }
 
@@ -324,19 +324,19 @@ footer {
   padding: 10px;
 }
 
-footer img{
+.footer__image {
   width: 50%;
   max-width: 100px;
 }
 
-footer p{
+footer p {
   width: 50%;
   font-size: 0.7rem;
 }
 
 /* ABOUT PAGE */
 
-.nobg{
+.nobg {
   background: none;
   color: var(--orange);
   margin-top: 60px;
@@ -441,7 +441,7 @@ footer p{
   .navbar__hamburger,
   .navbar__close,
   .about,
-  .footer__imageBlack{
+  .footer__imageBlack {
     display: none;
   }
 
@@ -499,7 +499,7 @@ footer p{
     transition: 0.3s;
   }
 
-  .navbar__logo:hover{
+  .navbar__logo:hover {
     transform: scale(1.1);
   }
 
@@ -525,7 +525,7 @@ footer p{
     transition: all 0.3s;
   }
 
-  .navbar__link a:hover{
+  .navbar__link a:hover {
     font-size: 1.1rem;
     color: var(--orange);
   }
@@ -535,12 +535,12 @@ footer p{
     color: var(--orange);
     border: solid 4px var(--orange);
     padding: 5%;
-    background-color: white; 
+    background-color: white;
     cursor: pointer;
     transition: all 0.3s;
   }
 
-  .navbar__button:hover{
+  .navbar__button:hover {
     background-color: var(--orange);
     color: white;
     border: solid 4px var(--orange);
@@ -556,10 +556,11 @@ footer p{
     height: auto;
   }
 
-  .hero__title{
+  .hero__title {
     font-size: 4rem;
     line-height: 4rem;
   }
+
   .hero__texts {
     margin: 5% auto 10%;
     width: 80%;
@@ -607,7 +608,7 @@ footer p{
     transition: all 0.3s;
   }
 
-  .features__card:hover{
+  .features__card:hover {
     transform: scale(1.15);
     border: 1px white solid;
   }
@@ -635,7 +636,7 @@ footer p{
     transition: 0.3s;
   }
 
-  .features__button:hover{
+  .features__button:hover {
     transform: scale(1.2);
   }
 
@@ -684,7 +685,7 @@ footer p{
     margin: 30px auto;
   }
 
-  .nobg{
+  .nobg {
     margin-top: 20px;
   }
 
@@ -736,17 +737,17 @@ footer p{
     height: 250px;
   }
 
-  footer img {
+  .footer__image {
     max-width: 150px;
     margin-left: 20%;
     padding: 20px 0;
   }
 
-  .footer__imageWhite{
+  .footer__imageWhite {
     display: block;
   }
 
-  .about__footer{
+  .about__footer {
     background-color: #2b2b2b;
     color: white;
   }

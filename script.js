@@ -4,21 +4,19 @@ const menu = document.querySelector('.navbar__links');
 const closeMenu = document.querySelector('.navbar__close');
 const menuLinks = document.querySelectorAll('.navbar__link');
 
-
-
-const toggleMenu = ()=>{
+const toggleMenu = () => {
   hamburger.classList.toggle('active');
   menu.classList.toggle('active');
   closeMenu.classList.toggle('active');
   body.classList.toggle('noScroll');
-}
+};
 
-const linkClicked = ()=>{
+const linkClicked = () => {
   hamburger.classList.remove('active');
   menu.classList.remove('active');
   closeMenu.classList.remove('active');
   body.classList.remove('noScroll');
-}
+};
 
 hamburger.addEventListener('click', toggleMenu);
 closeMenu.addEventListener('click', toggleMenu);
