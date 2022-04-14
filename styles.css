@@ -130,7 +130,7 @@ a:active {
   color: #2b2b2b;
   font-family: var(--montserrat);
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 5px;
   border-bottom: 2px white solid;
 }
@@ -138,7 +138,8 @@ a:active {
 .navbarLog__container,
 .navbar__button,
 .navbar__logo,
-.aboutHero__detailed {
+.aboutHero__detailed,
+.footer__imageWhite {
   display: none;
 }
 
@@ -154,12 +155,16 @@ a:active {
 }
 
 .hero__title {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+  font-family: var(--cocogoose);
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  line-height: 46px;
+  -webkit-text-fill-color: rgba(255, 0, 0, 0.781);
+  -webkit-background-clip: text;
+  background-image: url(./images/aboutPast2.png);
+  background-size: contain;
+  color: var(--orange);
 }
 
 .hero__logo {
@@ -312,14 +317,28 @@ a:active {
 }
 
 footer {
-  text-align: center;
-  margin: 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer__image {
+  width: 50%;
+  max-width: 100px;
+}
+
+footer p {
+  width: 50%;
+  font-size: 0.7rem;
 }
 
 /* ABOUT PAGE */
 
-.aboutHero__logo {
-  max-width: 100%;
+.nobg {
+  background: none;
+  color: var(--orange);
   margin-top: 60px;
 }
 
@@ -420,7 +439,9 @@ footer {
 
   .navbar__linkLogo,
   .navbar__hamburger,
-  .navbar__close {
+  .navbar__close,
+  .about,
+  .footer__imageBlack {
     display: none;
   }
 
@@ -475,6 +496,11 @@ footer {
   .navbar__logo {
     display: block;
     width: 100px;
+    transition: 0.3s;
+  }
+
+  .navbar__logo:hover {
+    transform: scale(1.1);
   }
 
   .navbar__links {
@@ -487,24 +513,39 @@ footer {
     align-items: center;
     background: none;
     transform: translateY(0);
+    font-weight: normal;
   }
 
   .navbar__link a {
     color: #2b2b2b;
     font-family: var(--lato);
     font-weight: 800;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: normal;
+    transition: all 0.3s;
+  }
+
+  .navbar__link a:hover {
+    font-size: 1.1rem;
+    color: var(--orange);
   }
 
   .navbar__button {
     display: block;
     color: var(--orange);
     border: solid 4px var(--orange);
-    margin: 0 60px;
     padding: 5%;
-    width: 70%;
     background-color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .navbar__button:hover {
+    background-color: var(--orange);
+    color: white;
+    border: solid 4px var(--orange);
+    font-weight: 900;
+    transform: scale(1.05);
   }
 
   /* HERO SECTION */
@@ -513,6 +554,11 @@ footer {
     background-image: url(./images/mainBg.png);
     background-size: cover;
     height: auto;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+    line-height: 4rem;
   }
 
   .hero__texts {
@@ -559,6 +605,12 @@ footer {
     width: 20%;
     padding: 3%;
     gap: 30px;
+    transition: all 0.3s;
+  }
+
+  .features__card:hover {
+    transform: scale(1.15);
+    border: 1px white solid;
   }
 
   .card__icon {
@@ -581,6 +633,11 @@ footer {
     font-size: 1.5rem;
     text-decoration: underline;
     cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .features__button:hover {
+    transform: scale(1.2);
   }
 
   .artist__container {
@@ -625,12 +682,11 @@ footer {
     background-position: center center;
     height: auto;
     padding: 10% 20% 5%;
-    margin-bottom: 30px;
+    margin: 30px auto;
   }
 
-  .aboutHero__logo {
-    width: 40%;
-    margin-top: 0;
+  .nobg {
+    margin-top: 20px;
   }
 
   .aboutHero__paragraph {
@@ -679,5 +735,20 @@ footer {
   .aboutPast__imgCont {
     width: 40%;
     height: 250px;
+  }
+
+  .footer__image {
+    max-width: 150px;
+    margin-left: 20%;
+    padding: 20px 0;
+  }
+
+  .footer__imageWhite {
+    display: block;
+  }
+
+  .about__footer {
+    background-color: #2b2b2b;
+    color: white;
   }
 }
