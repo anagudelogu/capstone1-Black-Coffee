@@ -2,6 +2,7 @@ const { body } = document;
 const hamburger = document.querySelector('.navbar__hamburger');
 const menu = document.querySelector('.navbar__links');
 const closeMenu = document.querySelector('.navbar__close');
+console.log(closeMenu);
 const menuLinks = document.querySelectorAll('.navbar__link');
 
 const toggleMenu = () => {
@@ -20,4 +21,6 @@ const linkClicked = () => {
 
 hamburger.addEventListener('click', toggleMenu);
 closeMenu.addEventListener('click', toggleMenu);
-menuLinks.forEach((link) => link.addEventListener('click', linkClicked));
+menuLinks.forEach((link) =>
+  link.addEventListener('click', linkClicked),
+);

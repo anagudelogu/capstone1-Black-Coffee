@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone 1 - Black coffee Fest</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,20 +19,29 @@
                 <li class="navbarLog__link">Logout</li>
             </ul>
         </section>
-        <nav class="navbar__menu">
+        <section class="navigation__bar">
             <a href="./index.html"><img src="./images/bc-main-logo.png" alt="Black Coffee Fest Logo" class="navbar__logo"></a>
-            <img src="./images/mobile_menu.png" alt="Menu icon" class="navbar__hamburger">
-            <ul class="navbar__links">
-                <li class="navbar__close"><img src="./images/close_mobile_menu.png" alt="Close menu"></li>
-                <li class="navbar__linkLogo navbar__link"><a href="./index.html"><img src="./images/bc-main-logo.png" alt="Black coffee fest"></a></li>
-                <li class="navbar__link"><a href="./about.html">About</a></li>
-                <li class="navbar__link"><a href="#">Program</a></li>
-                <li class="navbar__link"><a href="#">Join</a></li>
-                <li class="navbar__link"><a href="#">Sponsor</a></li>
-                <li class="navbar__link"><a href="#">News</a></li>
-                <li><button class="navbar__button" type="button">Buy Tickets Now!</button></li>
-            </ul>
-        </nav>
+            <div class="hamburger__container">
+                <i class="navbar__hamburger material-icons">menu</i>
+                <i class="navbar__close material-icons">close</i>
+            </div>
+            <nav class="navbar__menu">
+                <ul class="navbar__links">
+                    <li class="navbar__linkLogo navbar__link">
+                        <a href="./index.html"><img src="./images/bc-main-logo.png" alt="Black coffee fest" class="mobile_logo"></a>
+                    </li>
+                    <li class="navbar__link"><a href="./index.html">Home</a></li>
+                    <li class="navbar__link"><a href="./about.html">About</a></li>
+                    <li class="navbar__link"><a href="#">Program</a></li>
+                    <li class="navbar__link"><a href="#">Join</a></li>
+                    <li class="navbar__link"><a href="#">Sponsor</a></li>
+                    <li class="navbar__link"><a href="#">News</a></li>
+                    <li>
+                        <button class="navbar__button" type="button">Buy Tickets Now!</button>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </header>
     <main>
         <section class="hero__container">
