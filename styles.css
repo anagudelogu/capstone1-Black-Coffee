@@ -564,15 +564,19 @@ footer p {
 
   /* HERO SECTION */
   .hero__container {
-    margin-top: 80px;
+    margin-top: 90px;
     background-image: url(./images/mainBg.png);
     background-size: cover;
-    height: auto;
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero__title {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 6rem;
+    line-height: 6rem;
   }
 
   .hero__texts {
