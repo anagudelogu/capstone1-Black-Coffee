@@ -213,7 +213,8 @@ a:active {
 }
 
 .card__icon {
-  width: 30%;
+  font-size: 3rem;
+  color: white;
 }
 
 .card__title {
@@ -609,8 +610,10 @@ footer p {
   }
 
   .features__card:hover {
-    transform: scale(1.15);
+    transform: scale(1.3);
+    background: gray;
     border: 1px white solid;
+    opacity: 1;
   }
 
   .card__icon {
